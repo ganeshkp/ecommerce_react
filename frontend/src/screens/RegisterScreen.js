@@ -91,6 +91,10 @@ function RegisterScreen({ location, history }) {
             onChange={(e)=>setConfirmPassword(e.target.value)}
           >
           </Form.Control>
+          <Form.Text id="passwordHelpBlock" muted>
+            Your password must be 8-20 characters long, contain letters and numbers,
+            and must not contain spaces, special characters, or emoji.
+          </Form.Text>
         </Form.Group>
 
         <Button type='submit' variant='primary'>
